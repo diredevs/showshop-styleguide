@@ -1,6 +1,12 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
 // bower:scss
+@import "../../bower_components/bootswatch-scss/united/variables.scss";
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
-@import "../../bower_components/bootswatch-scss/simplex/bootswatch.scss";
+@import "../../bower_components/bootswatch-scss/united/bootswatch.scss";
 // endbower
+
+.top-search {
+  @extend "navbar-form";
+  margin-top: 10px;
+}
