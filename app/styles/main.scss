@@ -6,7 +6,48 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 @import "../../bower_components/bootswatch-scss/united/bootswatch.scss";
 // endbower
 
+.navbar {
+  border-radius: 0;
+}
+
 .top-search {
-  @extend "navbar-form";
   margin-top: 10px;
+}
+
+.cards-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @extend .row;
+  li {
+    @extend .col-md-3;
+  }
+}
+
+.card {
+  @extend .panel;
+  @extend .panel-default;
+}
+
+.card-cover {
+  background: #f0f0f0;
+  height: 16rem;
+}
+
+.card-body {
+  @extend .panel-body;
+}
+
+.card-bottom {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #f0f0f0;
+  line-height: 4rem;
+  transition: all 0.3s ease;
+  &:hover {
+    text-decoration: none;
+    background: $brand-primary;
+    color: #fff;
+  }
 }
