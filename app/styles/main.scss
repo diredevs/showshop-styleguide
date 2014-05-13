@@ -50,10 +50,15 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
     background: $brand-primary;
     color: #fff;
   }
+  &.active {
+    background: $brand-primary;
+    color: #fff;
+  }
 }
 
 .card-detail {
   @extend .col-md-12;
+  display: none;
 }
 
 .product-photos {
