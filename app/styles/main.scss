@@ -4,6 +4,10 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
+h1,h2,h3 {
+  margin: 0;
+}
+
 .navbar {
   border-radius: 0;
 }
@@ -150,7 +154,9 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
   margin-bottom: 1rem;
   background: pink;
   margin-top:-20px;
-  margin-bottom:0
+  margin-bottom:0;
+  background-size: cover;
+  background-position: center;
 }
 
 .store-search{
@@ -161,11 +167,8 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
   margin-top: 0
 }
 
-.categories{
-  border-top: 5px solid #cac8c8;
-}
-.about{
-  border-top: 5px solid #cac8c8;
+.categories, .about {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .product-cart-photo{
@@ -178,4 +181,65 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 .product-cart-price{
   color: #62ad5a;
   font-size: 1.5em;
+}
+
+.sony-styled {
+  background: #151515;
+  color: rgba(255, 255, 255, 0.9);
+
+  .store-navbar {
+    background: #262626;
+    border: 0;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+  }
+
+  .store-navbar .navbar-nav > li > a {
+    color: #fff;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  hr {
+    border-color: #404040;
+  }
+
+  .card {
+    border: 0;
+    background: #232323;
+    .card-bottom {
+      border-top-color: #404040;
+      background: #232323;
+      color: #fff;
+      &:hover {
+        background: #404040;
+      }
+    }
+  }
+
+}
+
+.categories {
+  padding: 4rem 0;
+  ul {
+    margin: 0;
+    // padding: 0;
+    list-style-type: none;
+  }
+  & > ul {
+    padding: 0;
+    @extend .row;
+  }
+  & > ul > li {
+    @extend .col-md-3;
+  }
+}
+
+.about {
+  padding: 4rem 0;
+  
 }
