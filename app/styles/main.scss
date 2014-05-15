@@ -142,3 +142,28 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
     bottom: 0;
   }
 }
+
+.store-hero{
+  height: 300px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 1rem;
+  background: pink;
+  margin-top:-20px;
+  margin-bottom:0
+}
+
+.store-search{
+  padding-right: 1em
+}
+
+.store-navbar{
+  margin-top: 0
+}
+
+.categories{
+  border-top: 5px solid #a6a5a5;
+}
+.about{
+  border-top: 5px solid #a6a5a5;
+}
