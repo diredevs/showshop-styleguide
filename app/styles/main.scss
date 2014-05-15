@@ -167,3 +167,15 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 .about{
   border-top: 5px solid #cac8c8;
 }
+
+.product-cart-photo{
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  background: pink;
+}
+
+.product-cart-price{
+  color: #62ad5a;
+  font-size: 1.5em;
+}
