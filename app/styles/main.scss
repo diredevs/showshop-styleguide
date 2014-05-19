@@ -22,6 +22,8 @@ h1,h2,h3 {
   padding: 0;
   @extend .row;
   & > li {
+    // margin: 0;
+    // padding: 0;
     @extend .col-md-3;
   }
 }
@@ -210,10 +212,10 @@ h1,h2,h3 {
 
   .card {
     border: 0;
-    background: #232323;
+    background: #383838;
     .card-bottom {
-      border-top-color: #404040;
-      background: #232323;
+      border-top-color: #5a5a5a;
+      background: #454545;
       color: #fff;
       &:hover {
         background: #404040;
@@ -241,5 +243,19 @@ h1,h2,h3 {
 
 .about {
   padding: 4rem 0;
-  
+}
+
+#cart {
+  display: none;
+}
+
+.cart {
+  position: fixed;
+  padding: 1rem;
+  z-index: 9999;
+  right: 0;
+  height: 100%;
+  width: 300px;
+  background: #fff;
+  border-left: 1px solid #ddd;
 }
