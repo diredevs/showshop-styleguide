@@ -11,5 +11,6 @@ $('document').ready(function () {
   $('.toggle-cart').on('click', function (event) {
     event.preventDefault();
     $('#cart').toggle();
+    $('.cart-shadow').fadeToggle();
   });
 });
