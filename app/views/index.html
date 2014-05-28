@@ -16,10 +16,10 @@
       </div>
     </li>
 
-    <div ng-show="products[0].detail" class="card-detail" id="product-detail-1">
+    <div ng-show="selected.detail" class="card-detail" id="product-detail-1">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h4>Sony Playstation 4</h4>
+          <h4>{{ selected.title }}</h4>
         </div>
         <div class="panel-body">
           <div class="row">

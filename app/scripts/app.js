@@ -43,8 +43,10 @@ angular
     $scope.toggleDetails = function (index) {
       var detail = $scope.products[index].detail;
       if (detail) {
+        $scope.selected = null;
         $scope.products[index].detail = false;
       } else {
+        $scope.selected = $scope.products[index];
         $scope.products[index].detail = true;
       }
       console.log($scope.products[index]);
