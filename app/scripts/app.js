@@ -1,7 +1,7 @@
 // global: angular
 'use strict';
 
-angular
+var shop = angular
   .module('showshop', ['ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider.
@@ -76,5 +76,21 @@ angular
       }
       console.log($scope.products[index]);
     };
-  })
-  ;
+  });
+
+  shop.config( function ( $routeProvider ) {
+  $routeProvider
+  .when( '/', {
+        templateUrl: 'products.html'//,
+        //controller: 'IndexController'
+    })
+  .when( '/lojas', {
+        templateUrl: 'stores.html'//,
+        //controller: 'LojasController'
+    })
+  .when( '/leiloes', {
+   templateUrl: 'auctions.html'//,
+   //controller: 'LeiloesController'
+   })
+  .otherwise( { redirectTo: '/' } );
+});
