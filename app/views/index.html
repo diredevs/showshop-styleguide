@@ -44,14 +44,16 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus nam ducimus culpa saepe voluptatum veritatis deserunt at magnam accusamus doloremque. Voluptatibus assumenda tempora sed magnam ea magni ratione, repudiandae laborum.
               <h4>Lojas</h4>
               <ul class="stores-tags">
-                <li>
-                  <span class="label label-primary">SUBMARINO | R$ 3800,00</span>
-                </li>
-                <li>
-                  <span class="label label-success">AMERICANAS | R$ 3900,00</span>
-                </li>
-                <li>
-                  <span class="label label-warning">SHOPTIME | R$ 4000,00</span>
+                <li ng-repeat="store in selected.stores">
+                  <span
+                    class="label label-primary label-store helper"
+                    style="background: {{ store.color }}"
+                    data-container="body"
+                    data-toggle="popover"
+                    data-placement="top"
+                    data-content="{{ store.features }}"
+                  >
+                    <i class="fa fa-tag"></i> {{ store.title }} | {{ store.price | currency: "R$ " }}</span>
                 </li>
               </ul>
             </div>

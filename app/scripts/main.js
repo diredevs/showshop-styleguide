@@ -13,4 +13,11 @@ $('document').ready(function () {
     $('#cart').toggle();
     $('.cart-shadow').fadeToggle();
   });
+
+  $('.toggle-help').on('click', function (event) {
+    event.preventDefault();
+    console.log('Hello');
+    $('.label-store').popover('show');
+  });
+
 });

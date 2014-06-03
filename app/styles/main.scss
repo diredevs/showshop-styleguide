@@ -62,9 +62,6 @@ h1,h2,h3 {
   &.active {
     background: $brand-primary;
     color: #fff;
-    &:after {
-
-    }
   }
 }
 
@@ -268,4 +265,9 @@ h1,h2,h3 {
   width: 300px;
   background: #fff;
   border-left: 1px solid #ddd;
+}
+
+.label-store {
+  margin-right: 1rem;
+  // border-radius: 0;
 }
