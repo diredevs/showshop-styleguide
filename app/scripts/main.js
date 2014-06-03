@@ -17,7 +17,7 @@ $('document').ready(function () {
   $('.toggle-help').on('click', function (event) {
     event.preventDefault();
     console.log('Hello');
-    $('.label-store').popover('show');
+    $('.label-store').popover('toggle');
   });
 
 });

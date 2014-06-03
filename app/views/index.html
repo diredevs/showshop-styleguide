@@ -1,20 +1,47 @@
 <div class="container">
-
-  <ul class="cards-list">
-    <li ng-repeat="product in products">
-      <div class="card">
-        <div class="card-cover"></div>
-        <div class="card-body">
-          <h4><a href="#">{{ product.title }}</a></h4>
-          <small>De <strong>{{ product.lowerPrice | currency }}</strong> a <strong>{{ product.higherPrice | currency }}</strong></small>
-          <br>
-          <small>Em <strong>{{ product.foundIn }} lojas</strong>.</small>
-        </div>
-        <a href="" ng-click="toggleDetails($index)" class="card-bottom card-display" data-product-detail= "product-detail-1">
-          VER MAIS
-        </a>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol> -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <h1>HELLO!</h1>
       </div>
-    </li>
+      <div class="item">
+        <h1>HELLO 2</h1>
+      </div>
+      <div class="item">
+        <h1>YAY</h1>
+      </div>
+    </div>
+    <a class="left carousel-control" href="" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
+
+
+<div class="container">
+  <ul class="cards-list">
+      <li ng-repeat="product in products">
+        <div class="card">
+          <div class="card-cover"></div>
+          <div class="card-body">
+            <h4><a href="#">{{ product.title }}</a></h4>
+            <small>De <strong>{{ product.lowerPrice | currency }}</strong> a <strong>{{ product.higherPrice | currency }}</strong></small>
+            <br>
+            <small>Em <strong>{{ product.foundIn }} lojas</strong>.</small>
+          </div>
+          <a href="" ng-click="toggleDetails($index)" class="card-bottom card-display" data-product-detail= "product-detail-1">
+            VER MAIS
+          </a>
+        </div>
+      </li>
 
     <div ng-show="selected.detail" class="card-detail" id="product-detail-1">
       <div class="panel panel-default">
@@ -24,6 +51,7 @@
         <div class="panel-body">
           <div class="row">
             <div class="col-md-4">
+              <div class="product-cover"></div>
               <ul class="product-photos">
                 <li>
                   <div class="product-photo"></div>

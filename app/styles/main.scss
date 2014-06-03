@@ -107,11 +107,18 @@ h1,h2,h3 {
   }
 }
 
+.product-cover {
+  height: 190px;
+  width: 190px;
+  float: left;
+  background: skyblue;
+}
+
 .product-photo {
-  height: 100px;
-  width: 100px;
+  height: 40px;
+  width: 40px;
   margin: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   background: pink;
 }
 
@@ -270,4 +277,11 @@ h1,h2,h3 {
 .label-store {
   margin-right: 1rem;
   // border-radius: 0;
+}
+
+.carousel-indicators li {
+  border-color: #000;
+  &.active {
+    background: #000;
+  }
 }
