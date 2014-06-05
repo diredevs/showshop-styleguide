@@ -71,7 +71,10 @@ var shop = angular
         lowerPrice: 1700.99,
         higherPrice: 2600.00,
         foundIn: 30,
-        stores: storesSet2
+        stores: storesSet2,
+        image: '../imgs/002.jpg',
+        small_img_1: '../imgs/002_1.jpg',
+        description: "Simples. Instantâneo. Completo. Leve mais diversão e entretenimento para toda a família com o XBOX ONE. Além de um console de jogos de última geração, o XBOX ONE permite que você tenha acesso aos seus filmes, jogos e músicas favoritas sem precisar mudar as entradas na sua TV. Você pode gerenciar todas essas funções apenas com o comando da sua voz."
       },
       {
         title: 'Nintendo Wii U',
