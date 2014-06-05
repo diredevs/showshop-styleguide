@@ -29,12 +29,12 @@
         <div class="card">
           <div class="card-cover"></div>
           <div class="card-body">
-            <h4><a href="#">Sony Playstation 4</a></h4>
+            <h4><a href="#">{{auction.product_name}}</a></h4>
             <small>Lance atual: <strong>R$ 3500,00</strong></small>
             <br>
-            <small>Restam <strong>10min</strong> para o fim do leilão</small>
+            <small>Restam <strong>{{auction.time_left | date:"hh:mm:ss"}}</strong> para o fim do leilão</small>
             <br>
-            <small><strong>35</strong> lances</small>
+            <small><strong>{{auction.counter}}</strong> lance(s)</small>
           </div>
           <a href="#" class="card-bottom card-display" data-product-detail= "product-detail-1">
             VER MAIS
