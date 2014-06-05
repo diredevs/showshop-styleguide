@@ -88,30 +88,30 @@ h1,h2,h3 {
 .card-detail {
   @extend .col-md-12;
   // display: none;
-  & > .panel {
-    &:after {
-      content:"";
-      border-color: #fff transparent transparent;
-      border-style:solid;
-      border-width:9px;
-      width:0;
-      height:0;
-      position:absolute;
-      bottom:-18px;
-      left:21px
-    }
-    &:before {
-      content:"";
-      border-color: #000066 transparent transparent;
-      border-style:solid;
-      border-width:10px;
-      width:0;
-      height:0;
-      position:absolute;
-      bottom:-20px;
-      left:20px
-    }
-  }
+  // & > .panel {
+  //   &:after {
+  //     content:"";
+  //     border-color: #fff transparent transparent;
+  //     border-style:solid;
+  //     border-width:9px;
+  //     width:0;
+  //     height:0;
+  //     position:absolute;
+  //     bottom:-18px;
+  //     left:21px
+  //   }
+  //   &:before {
+  //     content:"";
+  //     border-color: #000066 transparent transparent;
+  //     border-style:solid;
+  //     border-width:10px;
+  //     width:0;
+  //     height:0;
+  //     position:absolute;
+  //     bottom:-20px;
+  //     left:20px
+  //   }
+  // }
 }
 
 .product-photos {
