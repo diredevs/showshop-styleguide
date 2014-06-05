@@ -48,6 +48,21 @@ h1,h2,h3 {
   margin-right: auto;
   margin-left: auto;
 }
+
+.img-detail-cover{
+  height: 190px;
+  width: 190px;
+  float: left;
+}
+
+.img-detail-small{
+  height: 40px;
+  width: 40px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc8c8;
+}
+
 .card-body {
   @extend .panel-body;
 }

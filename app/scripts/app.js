@@ -62,7 +62,11 @@ var shop = angular
         foundIn: 180,
         detail: false,
         stores: stores,
-        image: '../imgs/001.jpg'
+        image: '../imgs/001.jpg',
+        small_img_1: '../imgs/001_1.jpg',
+        small_img_2: '../imgs/001_2.jpg',
+        small_img_3: '../imgs/001_3.jpg',
+        small_img_4: '../imgs/001_4.jpg'
       },
       {
         title: 'Microsoft XBOX One',
