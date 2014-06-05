@@ -14,8 +14,8 @@ var shop = angular
         //controller: 'LojasController'
         }).
       when( '/leiloes', {
-        templateUrl: 'auctions.html'//,
-        //controller: 'LeiloesController'
+        templateUrl: 'auctions.html',
+        controller: 'AuctionController'
        }).
       otherwise( { redirectTo: '/' } );
   })
