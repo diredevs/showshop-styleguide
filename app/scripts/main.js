@@ -14,6 +14,12 @@ $('document').ready(function () {
     $('.cart-shadow').fadeToggle();
   });
 
+  $('.toggle-cart-2').on('click', function (event) {
+    event.preventDefault();
+    $('#cart2').toggle();
+    $('.cart-shadow2').fadeToggle();
+  });
+
   $('.toggle-help').on('click', function (event) {
     event.preventDefault();
     console.log('Hello');

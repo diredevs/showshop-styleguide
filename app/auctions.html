@@ -27,7 +27,7 @@
     <ul class="cards-list">
       <li ng-repeat="auction in auctions">
         <div class="card">
-          <div class="card-cover"></div>
+          <img ng-src="{{ auction.image }}" class="img-cover"/>
           <div class="card-body">
             <h4><a href="#">{{auction.product_name}}</a></h4>
             <small>Lance atual: <strong class="current-bid">{{auction.price| currency:"R$"}}</strong></small>
