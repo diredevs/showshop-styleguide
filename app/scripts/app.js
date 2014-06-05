@@ -34,16 +34,16 @@ var shop = angular
 
   .controller('IndexController', function ($scope) {
     var stores = [
-      { features: 'menor preço', price: 1500 ,title: 'Submarino', color: '#5396e1'},
+      { features: 'MENOR PREÇO', price: 1500 ,title: 'Submarino', color: '#5396e1'},
       { price: 1700 ,title: 'Americanas', color: '#ef1515'},
-      { features: 'maior parcelamento, aceita cartão', price: 1650.99 ,title: 'Sony Store', color: '#000000'}
+      { features: 'MAIOR PARCELAMENTO', price: 1650.99 ,title: 'Sony Store', color: '#000000'}
     ];
     var storesSet2 = [
-      { price: 2300.50 ,title: 'Shoptime', color: '#e37e53'},
+      { features: 'MAIOR PARCELAMENTO', price: 2300.50 ,title: 'Shoptime', color: '#e37e53'},
       { price: 2100.00 ,title: 'Kabum', color: '#138df1'},
-      { price: 1650.99 ,title: 'Nagem', color: '#3262f4'},
+      { features: 'MAIS VENDIDO', price: 1650.99 ,title: 'Nagem', color: '#3262f4'},
       { price: 1650.99 ,title: 'Miranda', color: '#9d9d9d'},
-      { price: 1650.99 ,title: 'Wallmart', color: '#307afb'}
+      {features: 'CHEGA MAIS RÁPIDO ATÉ VOCÊ', price: 1650.99 ,title: 'Wallmart', color: '#307afb'}
     ];
 
     $scope.extractFeature = function(features) {
@@ -81,14 +81,20 @@ var shop = angular
         lowerPrice: 2000.00,
         higherPrice: 2750.00,
         foundIn: 50,
-        stores: stores
+        stores: stores,
+        image: '../imgs/003.jpg',
+        small_img_1: '../imgs/003_1.jpg',
+        description: 'O novo console da Nintendo! Jogos, experiências e possibilidades sensacionais! Descubra um novo e excitante modo de entretenimento com o Nintendo Wii U. Uma experiência revolucionária e novas formas de jogar com o inovador Wii U GamePad. Aproveite melhores jogos novos das suas franquias favoritas. Jogue em até 1080p HD pela primeira vez em um console de videogame Nintendo. '
       },
       {
-        title: 'Macbook Pro Retina 13"',
+        title: 'Macbook Pro Retina 13',
         lowerPrice: 6000.00,
         higherPrice: 8500.00,
         foundIn: 78,
-        stores: stores
+        stores: stores,
+        image: '../imgs/004.jpg',
+        small_img_1: '../imgs/004_1.jpg',
+        description: 'Com processador Intel Core i5, 8GB de memória, 256GB FLASH de HD tela de 13.3" e o moderno Sistema Operacional OS X Mavericks, o MacBook Pro Retina é o aparelho ideal para quem busca desempenho, tecnologia e praticidade.'
       }
     ];
 
