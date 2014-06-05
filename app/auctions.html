@@ -32,7 +32,7 @@
             <h4><a href="#">{{auction.product_name}}</a></h4>
             <small>Lance atual: <strong class="current-bid">R$ 3500,00</strong></small>
             <br>
-            <small>Restam <strong class="countdown-timer">{{auction.time_left | date:"hh:mm:ss"}}</strong> para o fim do leilão</small>
+            <small>Restam <strong class="countdown-timer" ng-class="{'timing-out': auction.timing_out}">{{auction.time_left | date:"mm:ss"}}</strong> para o fim do leilão</small>
             <br>
             <small><strong>{{auction.counter}}</strong> lance(s)</small>
           </div>
