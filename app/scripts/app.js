@@ -52,9 +52,7 @@ var shop = angular
         stores: stores,
         image: '../imgs/001.jpg',
         small_img_1: '../imgs/001_1.jpg',
-        small_img_2: '../imgs/001_2.jpg',
-        small_img_3: '../imgs/001_3.jpg',
-        small_img_4: '../imgs/001_4.jpg'
+        description: "Desfrute de uma experiência incrível com elementos gráficos de encher os olhos, alta velocidade e personalização inteligente com um dos consoles mais completos do mercado. O PlayStation 4 é mais que um videogame. Esse aparelho oferece total integração com as redes sociais e recursos de segunda tela inteligentes e dinâmicos."
       },
       {
         title: 'Microsoft XBOX One',
