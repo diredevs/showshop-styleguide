@@ -30,7 +30,7 @@
           <div class="card-cover"></div>
           <div class="card-body">
             <h4><a href="#">{{auction.product_name}}</a></h4>
-            <small>Lance atual: <strong class="current-bid">R$ 3500,00</strong></small>
+            <small>Lance atual: <strong class="current-bid">{{auction.price| currency:"R$"}}</strong></small>
             <br>
             <small>Restam <strong class="countdown-timer" ng-class="{'timing-out': auction.timing_out}">{{auction.time_left | date:"mm:ss"}}</strong> para o fim do leilão</small>
             <br>
