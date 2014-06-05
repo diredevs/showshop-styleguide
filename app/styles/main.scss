@@ -43,6 +43,11 @@ h1,h2,h3 {
   border-top-right-radius: 4px;
 }
 
+.img-cover{
+  height: 16rem;
+  margin-right: auto;
+  margin-left: auto;
+}
 .card-body {
   @extend .panel-body;
 }

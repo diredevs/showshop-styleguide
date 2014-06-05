@@ -2,7 +2,9 @@
   <ul class="cards-list">
       <li ng-repeat="product in products">
         <div class="card">
-          <div class="card-cover"></div>
+
+            <img ng-src="{{ product.image }}" class="img-cover"/>
+
           <div class="card-body">
             <h4><a href="#">{{ product.title }}</a></h4>
             <small>De <strong>{{ product.lowerPrice | currency }}</strong> a <strong>{{ product.higherPrice | currency }}</strong></small>

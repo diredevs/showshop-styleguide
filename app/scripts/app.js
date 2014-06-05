@@ -49,7 +49,8 @@ var shop = angular
         higherPrice: 4100.00,
         foundIn: 180,
         detail: false,
-        stores: stores
+        stores: stores,
+        image: '../imgs/001.jpg'
       },
       {
         title: 'Microsoft XBOX One',
@@ -85,7 +86,7 @@ var shop = angular
       }
       console.log($scope.products[index]);
     };
-  })
+  });
 
 //   .config( function ( $routeProvider ) {
 //   $routeProvider
