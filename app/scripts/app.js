@@ -6,9 +6,18 @@ var shop = angular
   .config(function ($routeProvider) {
     $routeProvider.
       when('/', {
-        templateUrl: 'views/index.html',
+        templateUrl: 'products.html',
         controller: 'IndexController'
-      });
+      }).
+      when( '/lojas', {
+        templateUrl: 'stores.html'//,
+        //controller: 'LojasController'
+        }).
+      when( '/leiloes', {
+        templateUrl: 'auctions.html'//,
+        //controller: 'LeiloesController'
+       }).
+      otherwise( { redirectTo: '/' } );
   })
 
   .controller('IndexController', function ($scope) {
@@ -76,21 +85,21 @@ var shop = angular
       }
       console.log($scope.products[index]);
     };
-  });
+  })
 
-  shop.config( function ( $routeProvider ) {
-  $routeProvider
-  .when( '/', {
-        templateUrl: 'products.html'//,
-        //controller: 'IndexController'
-    })
-  .when( '/lojas', {
-        templateUrl: 'stores.html'//,
-        //controller: 'LojasController'
-    })
-  .when( '/leiloes', {
-   templateUrl: 'auctions.html'//,
-   //controller: 'LeiloesController'
-   })
-  .otherwise( { redirectTo: '/' } );
-});
+//   .config( function ( $routeProvider ) {
+//   $routeProvider
+//   .when( '/', {
+//         templateUrl: 'index.html'//,
+//         // controller: 'IndexController'//
+//     })
+//   .when( '/lojas', {
+//         templateUrl: 'stores.html'//,
+//         //controller: 'LojasController'
+//     })
+//   .when( '/leiloes', {
+//    templateUrl: 'auctions.html'//,
+//    //controller: 'LeiloesController'
+//    })
+//   .otherwise( { redirectTo: '/' } );
+// });
