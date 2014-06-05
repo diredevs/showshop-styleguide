@@ -3,7 +3,7 @@
       <li ng-repeat="product in products">
         <div class="card">
 
-            <img ng-src="{{ product.image }}" class="img-cover"/>
+          <img ng-src="{{ product.image }}" class="img-cover"/>
 
           <div class="card-body">
             <h4><a href="#">{{ product.title }}</a></h4>
@@ -25,19 +25,19 @@
         <div class="panel-body">
           <div class="row">
             <div class="col-md-4">
-              <div class="product-cover"></div>
+              <img ng-src="{{ selected.image }}" class="img-detail-cover"/>
               <ul class="product-photos">
                 <li>
-                  <div class="product-photo"></div>
+                  <img ng-src="{{ selected.small_img_1 }}" class="img-detail-small"/>
                 </li>
                 <li>
-                  <div class="product-photo"></div>
+                  <img ng-src="{{ selected.small_img_1 }}" class="img-detail-small"/>
                 </li>
                 <li>
-                  <div class="product-photo"></div>
+                  <img ng-src="{{ selected.small_img_1 }}" class="img-detail-small"/>
                 </li>
                 <li>
-                  <div class="product-photo"></div>
+                  <img ng-src="{{ selected.small_img_1 }}" class="img-detail-small"/>
                 </li>
               </ul>
             </div>
