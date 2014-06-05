@@ -27,7 +27,7 @@ var shop = angular
        }).
       when( '/conta', {
         templateUrl: 'account.html',
-        controller: 'AcountController'
+        controller: 'AccountController'
        }).
       otherwise( { redirectTo: '/' } );
   })
