@@ -9,6 +9,10 @@ var shop = angular
         templateUrl: 'products.html',
         controller: 'IndexController'
       }).
+       when('/sobre', {
+        templateUrl: 'about.html',
+        controller: 'AboutController'
+      }).
       when( '/lojas', {
         templateUrl: 'stores.html'//,
         //controller: 'LojasController'
@@ -16,6 +20,14 @@ var shop = angular
       when( '/leiloes', {
         templateUrl: 'auctions.html',
         controller: 'AuctionController'
+       }).
+      when( '/pedidos', {
+        templateUrl: 'orders.html',
+        controller: 'OrdersController'
+       }).
+      when( '/conta', {
+        templateUrl: 'account.html',
+        controller: 'AccountController'
        }).
       otherwise( { redirectTo: '/' } );
   })
